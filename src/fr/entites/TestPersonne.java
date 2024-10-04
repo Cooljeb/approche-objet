@@ -9,8 +9,8 @@ public class TestPersonne {
                 new AdressePostale(12,"rue des acacias",44120,"Vertou"));
         Personne p2= new Personne("Jean-Louis","David",
                 new AdressePostale(1,"cours des tifs",44230,"Saint Sébastien sur Loire"));
-
-
+        p1.modifierAdresse(new AdressePostale(13,"rue des acacias",44120,"Vertou"));
+        p2.modifierAdresse(new AdressePostale(2,"cours des tifs",44230,"Saint Sébastien sur Loire"));
 
     }
 }
