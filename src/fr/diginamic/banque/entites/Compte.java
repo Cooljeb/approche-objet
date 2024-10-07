@@ -3,7 +3,7 @@ package fr.diginamic.banque.entites;
 public class Compte {
 
     //variables de classe
-    private int numCompte;
+    private Long numCompte;
     private int soldeCompte;
 
     //constructeur
@@ -13,7 +13,7 @@ public class Compte {
      * @param numCompte alias numéro de compte
      * @param soldeCompte alias solde du compte
      */
-    public Compte(int numCompte, int soldeCompte) {
+    public Compte(Long numCompte, int soldeCompte) {
         this.numCompte = numCompte;
         this.soldeCompte = soldeCompte;
     }
@@ -22,7 +22,7 @@ public class Compte {
      * getter de numCompte
      * @return numCompte
      */
-    public int getNumCompte() {
+    public Long getNumCompte() {
         return numCompte;
     }
 
@@ -34,7 +34,7 @@ public class Compte {
      * setter de numéro de compte
      * @param numCompte
      */
-    public void setNumCompte(int numCompte) {
+    public void setNumCompte(Long numCompte) {
         this.numCompte = numCompte;
     }
 

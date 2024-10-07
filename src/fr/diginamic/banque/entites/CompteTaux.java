@@ -11,7 +11,7 @@ public class CompteTaux extends Compte {
      */
 
     private static double taux = 0.00f;
-    public CompteTaux(int numCompte, int soldeCompte, double taux) {
+    public CompteTaux(Long numCompte, int soldeCompte, double taux) {
         super(numCompte, soldeCompte);
         this.taux=taux;
     }

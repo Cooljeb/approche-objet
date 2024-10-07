@@ -7,8 +7,8 @@ public class TestBanque {
 
     public static void main(String[] args) {
         Compte tabCompte[] = new Compte[2]; // tableau de compte
-        Compte cpt1 = new Compte(1,3000); // compte courant
-        CompteTaux cpt2 =  new CompteTaux(2,2563,5.50);// compte + taux
+        Compte cpt1 = new Compte(1L,3000); // compte courant
+        CompteTaux cpt2 =  new CompteTaux(2L,2563,5.50);// compte + taux
         //affectation des valeurs au tableau de comtpes
         tabCompte[0] = cpt1;
         tabCompte[1] = cpt2;
