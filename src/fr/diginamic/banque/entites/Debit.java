@@ -10,7 +10,14 @@ public class Debit extends Operation {
     @Override public String getType() {
         return "DEBIT";
     }
+
+    @Override public double calculTotal(double somme) {
+        return somme-montant ;
+    }
+
     @Override public String toString() {
         return "Opération de débit  " + super.toString() + getType().toUpperCase();
     }
+
+
 }

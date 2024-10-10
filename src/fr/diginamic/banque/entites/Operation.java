@@ -37,6 +37,8 @@ public abstract class Operation {
     //méthode abstraite
     public abstract String getType();
 
+    public abstract double calculTotal(double somme);
+
     @Override public String toString() {
         return "Operation{" + "dateOperation='" + dateOperation + '\'' + ", montant=" + montant + '}';
     }

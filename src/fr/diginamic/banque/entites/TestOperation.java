@@ -1,5 +1,8 @@
 package fr.diginamic.banque.entites;
 
+import java.text.DecimalFormat;
+import java.util.Objects;
+
 public class TestOperation {
 
     public static void main(String[] args) {
@@ -16,17 +19,21 @@ public class TestOperation {
         for (int i = 0; i < tabOperation.length; i++) {
             System.out.println(tabOperation[i].getDateOperation() +" :  montant :" + tabOperation[i].getMontant()+
                     " ==> "+ tabOperation[i].getType());
-            if(tabOperation[i].getType() == "CREDIT") {
-                global+=tabOperation[i].getMontant();
-            }else{
-                global-=tabOperation[i].getMontant();
-            }
+            global=tabOperation[i].calculTotal(global);
+//            if(Objects.equals(tabOperation[i].getType(), "CREDIT")) {
+//                global+=tabOperation[i].getMontant();
+//            }else{
+//                global-=tabOperation[i].getMontant();
+//            }
         }
-        if (global>0){
-            System.out.println("Montant total des opérations = + " +global+" €");
-        }else{
-            System.out.println("Montant total des opérations : " +global+" €");
-        }
+        DecimalFormat formateur = new DecimalFormat("#.00");
+        String sommeFormatee = formateur.format(global);
+        System.out.println("La somme est égale à :"+sommeFormatee);
+//        if (global>0){
+//            System.out.println("Montant total des opérations = + " +global+" €");
+//        }else{
+//            System.out.println("Montant total des opérations : " +global+" €");
+//        }
 
     }
 }

@@ -11,6 +11,10 @@ public class Credit extends Operation{
         return "CREDIT";
     }
 
+    @Override public double calculTotal(double somme) {
+        return somme+montant;
+    }
+
     @Override public String toString() {
         return "Opération de crédit  " + super.toString() + getType().toUpperCase();
     }
