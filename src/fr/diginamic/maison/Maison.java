@@ -80,5 +80,22 @@ public class Maison {
         return superficie;
      }
 
+    /**
+     * Dans la classe Maison, écrivez une méthode qui retourne le nombre de pièces d’un type donné
+     * : par exemple le nombre de chambres.
+     * @param p Pèce à compter
+     * @return nbpiece Nombre de pièce
+     */
+     public int nbPieceType(Piece p){
+         int nbpiece=0;
+         String typePiece = p.getClass().getSimpleName();
+         for (int i = 0; i <tabPiece.length ; i++) {
+             if (typePiece.equals(tabPiece[i].getClass().getSimpleName())){
+                 nbpiece++;
+             }
+         }
+       return nbpiece;
+     }
+
 
 }

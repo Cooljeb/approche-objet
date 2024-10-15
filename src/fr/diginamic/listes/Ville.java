@@ -40,9 +40,22 @@ public class Ville {
      * @return
      */
 
-    @Override public String toString() {
+    @Override
+    public String toString() {
         return "\nVille{" + "nom='" + nom + '\'' + ", nbHab=" + nbHab + '}';
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (!(obj instanceof Ville)) { // on
+            return false;
+        }
+        Ville autre = (Ville)obj;
+        return this.nom.equals(((Ville) obj).getNom())&&this.nbHab==autre.getNbHab();
+    }
+
+
+
 }
 
 

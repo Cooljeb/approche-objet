@@ -39,14 +39,21 @@ public class TestVille {
         /**
          * tri effectué sur le nombre d'habitants
          */
-        System.out.println("Affichage tri par Habitants");
+       // System.out.println("Affichage tri par Habitants");
         ArrayList <Ville> listeVilles2 = new ArrayList<Ville>();
         Collections.sort(listeVilles,new ComparatorHabitant(listeVilles));
 
 
-        for (int i = 0; i < listeVilles.size() ; i++) {
-            System.out.print(new ArrayList<Ville>().addAll(i,listeVilles));
+//        for (int i = 0; i < listeVilles.size() ; i++) {
+//            System.out.print(new ArrayList<Ville>().addAll(i,listeVilles));
+//        }
+        Ville vex = new Ville("Nice", 343000);
+        Ville vex2 = new Ville("Nices", 343000);
+        for (int i = 0; i <listeVilles.size() ; i++) {
+            System.out.println(vex2.equals(listeVilles.get(i)));
         }
+
+        //System.out.print(listeVilles.toString());
 //        System.out.println("Affichage tri par Nom");
 //        System.out.print("\n-----------------------");
 //

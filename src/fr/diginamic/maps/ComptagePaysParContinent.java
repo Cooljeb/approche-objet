@@ -41,7 +41,6 @@ public class ComptagePaysParContinent {
                 }
             }
             comptagePays.put(continent,nbPays);
-            j=0;
         }
         //System.out.println(listePays);
         System.out.println("\nNombre de pays par continent");
